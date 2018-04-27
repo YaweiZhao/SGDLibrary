@@ -123,7 +123,7 @@ function [w, infos] = svrg(problem, in_options)
     if optgap < options.tol_optgap
         fprintf('Optimality gap tolerance reached: tol_optgap = %g\n', options.tol_optgap);
     elseif epoch == options.max_epoch
-        fprintf('Max epoch reached: max_epochr = %g\n', options.max_epoch);
+        %fprintf('Max epoch reached: max_epochr = %g\n', options.max_epoch);
     end
     
     infos.subinfos = subinfos;    
