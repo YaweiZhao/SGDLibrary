@@ -47,7 +47,7 @@ function [w, infos] = svrg_bb(problem, in_options)
     [infos, f_val, optgap] = store_infos(problem, w, options, [], epoch, grad_calc_count, 0);  
     
     % set start time
-    start_time = tic();
+   % start_time = tic();
     
     % display infos
     if options.verbose > 0
@@ -105,7 +105,7 @@ function [w, infos] = svrg_bb(problem, in_options)
         end
         
         % measure elapsed time
-        elapsed_time = toc(start_time);
+        %elapsed_time = toc(start_time);
         
         % count gradient evaluations
         grad_calc_count = grad_calc_count + j * options.batch_size;        
