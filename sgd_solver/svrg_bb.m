@@ -112,7 +112,7 @@ function [w, infos] = svrg_bb(problem, in_options)
         epoch = epoch + 1;
         
         % store infos
-        [infos, f_val, optgap] = store_infos(problem, w, options, infos, epoch, grad_calc_count, elapsed_time);          
+        %[infos, f_val, optgap] = store_infos(problem, w, options, infos, epoch, grad_calc_count, elapsed_time);          
 
         % display infos
         if options.verbose > 0
